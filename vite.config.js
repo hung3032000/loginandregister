@@ -1,10 +1,10 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import path from "path";
-import { fileURLToPath } from "url";
+// import path from "path";
+// import { fileURLToPath } from "url";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
@@ -12,12 +12,12 @@ export default defineConfig({
     port: 3000,
   },
   // root: "../src/", // Đặt thư mục gốc là ./src
-  base: "./src/", // Đường dẫn cơ sở khi deploy
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "src"), // Alias cho thư mục src
-    },
-  },
+  // base: "./src", // Đường dẫn cơ sở khi deploy
+  // resolve: {
+  //   alias: {
+  //     "@": path.resolve(__dirname, "src"), // Alias cho thư mục src
+  //   },
+  // },
   // build: {
   //   outDir: "dist",
   // },
