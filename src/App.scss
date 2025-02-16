@@ -96,7 +96,7 @@ img, video{
 }
 .btn :hover{
     color: var(--primaryColor);
-    background: var(--paleGreen);
+    background: unset;
 }
 // Pages stylings
 .loginPage, .registerPage{
@@ -194,6 +194,7 @@ img, video{
                 padding: 1.5rem 0;
                 img{
                     width: 60px;
+
                     padding-bottom: .5rem;
                 }
 
@@ -254,7 +255,6 @@ img, video{
                     &:hover{
                         background: var(--hoverColor);
                         color: var(--blackColor);
-
                         .icon{
                             color: var(--blackColor);
                             transform: translateX(5px);
@@ -277,4 +277,134 @@ img, video{
 
         }
     }
+}
+//Dashboard
+.dashboard{
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    .dashboardContainer{
+        height: 95vh;
+        width: 95%;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 10px rgb(194, 194, 194);
+    }
+}
+
+// responsive dashboard
+
+// responsive login and register
+@media screen  and (max-width: 678px){
+    .loginPage, .registerPage{
+        .container{
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            padding: 1.5rem;
+            .videoDiv{
+                width: 100%;
+                .textDiv{
+                    .title{
+                        font-size: 20px;
+                    }
+
+                    p{
+                        padding: 1rem;
+                    }
+                }
+                .footerDiv{
+                    .text{
+                        font-size: 12px;
+                    }
+
+                    .btn{
+                        padding:  .4rem 1.5rem;
+                    }
+                }
+            }
+            .formDiv{
+                gap: 1rem;
+                transform: translateY(-.5rem);
+                .headerDiv{
+                    padding: 1rem 0;
+
+                    img{
+                        width: 40px;
+                    }
+
+                    h3{
+                        font-size: 20px;
+                    }
+                }
+                .form{
+                    gap: .5rem;
+                    .inputDiv{
+                        .input{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen  and (max-width: 602px){
+    .loginPage, .registerPage{
+        .container{
+            .videoDiv{
+                .textDiv{
+                    .title{
+                        font-size: 25px;
+                    }
+
+                    p{
+                        padding: 1rem;
+                    }
+                }
+                .footerDiv{
+                    .text{
+                        font-size: 12px;
+                    }
+
+                    .btn{
+                        padding:  .8rem 1.5rem;
+                    }
+                }
+            }
+            .formDiv{
+                .headerDiv{
+                    padding: 1.5rem 0;
+
+                    h3{
+                        font-size: 20px;
+                    }
+                }
+                .form{
+                    .inputDiv{
+                        .input{
+                            width: 100%;
+                            max-width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen  and (max-width: 927px){
+    .loginPage, .registerPage{
+        .container{
+            width: 85%;
+        }
+    }
+}
+
+
+// hide scroll bar
+::-webkit-scrollbar{
+    display: none;
 }

@@ -16,11 +16,11 @@ const Register = () => {
         <div className="videoDiv">
           <video src={video} autoPlay muted loop></video>
           <div className="textDiv">
-            <h2 className="title">Create and sell products</h2>
-            <p> test1234</p>
+            <h2 className="title">Nơi đăng kí tài khoản</h2>
+            <p> Đăng kí đê để còn đăng bài</p>
           </div>
           <div className="footerDiv flex">
-            <span className="text"> Have account?</span>
+            <span className="text"> Có tài khoản rồi?</span>
             <Link to={"/"}>
               <button className="btn">Login</button>
             </Link>
@@ -76,7 +76,7 @@ const Register = () => {
               <AiOutlineSwapRight className="icon"></AiOutlineSwapRight>
             </button>
             <span className="forgotPassword">
-              Quen mk? <a href=""> CLick here</a>
+              Quên mật khẩu? <a href=""> Click here</a>
             </span>
           </form>
         </div>

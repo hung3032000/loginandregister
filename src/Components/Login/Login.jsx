@@ -1,5 +1,6 @@
-import "./Login.css";
+
 import "../../App.css";
+import "./Login.css";
 // Import assets
 import video from "../../../public/video/small.mp4";
 import logo from "../../../public/img/logo.jpg";
@@ -15,11 +16,11 @@ const Login = () => {
         <div className="videoDiv">
           <video src={video} autoPlay muted loop></video>
           <div className="textDiv">
-            <h2 className="title">Create and sell products</h2>
-            <p> test1234</p>
+            <h2 className="title">Tạo và đăng bài đê</h2>
+            <p> Login vào để có thể cập nhập blog xàm xí của Hưng</p>
           </div>
           <div className="footerDiv flex">
-            <span className="text"> Dont have account?</span>
+            <span className="text"> Không có tài khoản? Đăng kí ngay</span>
             <Link to={"/register"}>
               <button className="btn">Sign up</button>
             </Link>
@@ -59,11 +60,11 @@ const Login = () => {
             </div>
 
             <button type="submit" className="btn flex">
-              <span> Login</span>
+              <span className="btnSpan"> Login</span>
               <AiOutlineSwapRight className="icon"></AiOutlineSwapRight>
             </button>
             <span className="forgotPassword">
-              Quen mk? <a href=""> CLick here</a>
+              Quên mật khẩu? <a href=""> Click here</a>
             </span>
           </form>
         </div>
