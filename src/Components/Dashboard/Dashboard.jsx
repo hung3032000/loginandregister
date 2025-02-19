@@ -1,13 +1,15 @@
+import "../../App.css";
 import "./Dashboard.css";
 
+import Sidebar from "./SideBarSection/sidebar";
+import Body from "./BodySection/Body";
+// import 
 const Dashboard = () => {
   return (
-    <>
-      <a href="/register">register</a>;
-      <a href="/dashboard">Dashboard</a>;
-      <a href="/">login</a>;
-      dashboard
-    </>
+    <div className="container">
+      <Sidebar/>
+      <Body/>
+    </div>
   );
 };
 
