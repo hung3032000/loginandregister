@@ -1,14 +1,14 @@
-import './Register.css';
+import "./Register.css";
 import "../../App.css";
 // Import assets
-import video from "../../../public/video/small.mp4";
-import logo from "../../../public/img/logo.jpg";
+import video from "/video/small.mp4";
+import logo from "/img/logo.jpg";
 import { Link } from "react-router-dom";
 // import icon
 import { FaUserShield } from "react-icons/fa";
 import { BsFillShieldLockFill } from "react-icons/bs";
 import { AiOutlineSwapRight } from "react-icons/ai";
-import { MdMarkEmailRead } from 'react-icons/md';
+import { MdMarkEmailRead } from "react-icons/md";
 const Register = () => { 
   return (
     <div className="registerPage flex">

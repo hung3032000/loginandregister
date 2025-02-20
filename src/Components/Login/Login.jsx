@@ -1,9 +1,8 @@
-
 import "../../App.css";
 import "./Login.css";
 // Import assets
 import video from "/video/small.mp4";
-import logo from "../../../public/img/logo.jpg";
+import logo from "/img/logo.jpg";
 import { Link } from "react-router-dom";
 // import icon
 import { FaUserShield } from "react-icons/fa";
