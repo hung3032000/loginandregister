@@ -2,7 +2,7 @@
 import "../../App.css";
 import "./Login.css";
 // Import assets
-import video from "../../../public/video/small.mp4";
+import video from "/video/small.mp4";
 import logo from "../../../public/img/logo.jpg";
 import { Link } from "react-router-dom";
 // import icon
